@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="scripts.js" defer></script>
+    <script src="https://kit.fontawesome.com/fa3cfddad4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="centered-elements"> 
+        <section class="game-over-screen-section centered-elements display-none" id="game-over-screen">
+            <p class="last-ans">Previous Answer: <span class="revealed-answer" id="lastAnswer"></span></p>
+            <p class="score_css number-font-style" id="score_js">number</p>
+            <p class="game-over-message string-font-style" id="game-over-message">string</p>
+            <button class="button_css" id="restart-button" type="button">Restart</button>
+        </section>
+        <section class="gameplay-section centered-elements" id="gameplay-section">
+            
+                <span class="rule-book" id="ruleBook"><i class="fa-solid fa-book"></i></span>
+                <div class="rule-container" id="ruleContainer">
+                    <p class="rule">guess what the acronym stands for</p>
+                </div>
+    
+            <p class="timer_css" id="timer_js">TIMER</p>
+            <div class="card centered-elements">
+                <p class="song-acronym-display string-font-style" id="acronym-display">RFI</p>
+                <p class="current-card">Current Card: <span  id="indexNum">0/13</span></p>
+                <input class="text-input" id="text-input" disabled type="text" placeholder="...READY FOR IT?">
+            </div>
+            
+            <button class="button_css" id="start-button" type="button" data-disabled="false">Let the games begin</button>
+            <!-- <p>Live Score Count: <span id="temporaryScoreDisplay">0</span></p> -->
+            
+            <p class="prev-ans">Previous Answer: <span class="revealed-answer" id="revealedAnswer"></span></p>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul class="social-links-container">
+                <li><a target="_blank" class="social-link" href="https://www.facebook.com/TaylorSwift"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li><a target="_blank" class="social-link" href="https://twitter.com/taylorswift13"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                <li><a target="_blank" class="social-link" href="https://www.instagram.com/taylorswift/"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a target="_blank" class="social-link" href="https://www.tiktok.com/@taylorswift"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
