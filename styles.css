@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 :root {
@@ -42,31 +41,10 @@
     justify-content: center;
 }
 
-.rule-book {
-    position: absolute;
-    top: 1.2rem;
-    right: 1.2rem;
-    font-size: 1.8rem;
-    color: var(--color-e);
-    cursor: pointer;
-}
-
-.rule-container {
-    position: absolute;
-    top: 4rem;
-    right: 1.2rem;
-    color: var(--color-e);
-    font-size: 0.8rem;
-    width: 10ch;
-    transform: translateX(200%);
-    transition: 0.5s linear;
-}
-
-
-
 /* Main Element Styles ------------------------------------------------------------------------------------- */
 
 main {
+    overflow: hidden;
     position: relative;
     background: linear-gradient(to bottom, var(--color-a), var(--color-f) 30%, var(--color-f) 70%, var(--color-a));
 }
@@ -97,6 +75,34 @@ main {
     padding: 4rem 0;
     gap: 1rem;
     font-family: var(--default-font);
+    background: linear-gradient(to bottom, var(--color-a), var(--color-f) 30%, var(--color-f) 70%, var(--color-a));
+}
+
+.rule-book {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 1.8rem;
+    color: var(--color-e);
+    cursor: pointer;
+}
+
+.rule-book:hover {
+    color: var(--color-d);
+}
+
+.rule-container {
+    position: absolute;
+    top: 4rem;
+    right: 1.2rem;
+    color: var(--color-e);
+    font-size: 1rem;
+    width: 15ch;
+    transform: translateX(200%);
+    transition: 0.5s linear;
+    text-align: justify;
+    border: solid 2px var(--color-e);
+    padding: 0.4rem;
     background: linear-gradient(to bottom, var(--color-a), var(--color-f) 30%, var(--color-f) 70%, var(--color-a));
 }
 
@@ -240,6 +246,20 @@ main {
         min-height: 100vh;
         padding: 2rem 1rem;
         gap: 1rem;
+    }
+
+    .rule-book {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+        font-size: 1.2rem;
+        color: var(--color-e);
+        cursor: pointer;
+    }
+
+    .rule-container {
+        font-size: 0.7rem;
+        top: 3rem;
     }
 
     .timer_css  {
