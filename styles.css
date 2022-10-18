@@ -82,13 +82,14 @@ main {
     position: absolute;
     top: 1.2rem;
     right: 1.2rem;
-    font-size: 1.8rem;
-    color: var(--color-e);
+    width: 1.8rem;
+    height: 1.8rem;
+    fill: var(--color-e);
     cursor: pointer;
 }
 
 .rule-book:hover {
-    color: var(--color-d);
+    fill: var(--color-d);
 }
 
 .rule-container {
@@ -200,6 +201,7 @@ main {
     font-weight: bold;
     color: var(--neutral-color);
     transition: 0.2s linear;
+    fill: var(--neutral-color);
 }
 .social-link::after {
     content: " ";
@@ -214,15 +216,20 @@ main {
 }
 .social-link:hover, .social-link:active {
     color: var(--color-b);
+    fill: var(--color-b);
 }
-.fa-brands {
-    font-size: 1.1rem;
+
+.social-icon {
+    vertical-align: text-bottom;
+    aspect-ratio: 1 / 1;
+    width: 1rem;
+
 }
 
 /* Media Screen Sizes ----------------------------------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (max-width: 480px) {
 
     .number-font-style {
         font-weight: bolder;
@@ -252,7 +259,8 @@ main {
         position: absolute;
         top: 1.2rem;
         right: 1.2rem;
-        font-size: 1.2rem;
+        width: 1.2rem;
+        height: 1.2rem;
         color: var(--color-e);
         cursor: pointer;
     }
@@ -322,10 +330,6 @@ main {
     }
     .social-link {
         font-size: 0;
-    }
-    .fa-brands {
-        font-size: 1rem;
-        vertical-align: middle;
     }
 }
 
@@ -415,10 +419,6 @@ main {
     }
     .social-link {
         font-size: 0;
-    }
-    .fa-brands {
-        font-size: 1.4rem;
-        vertical-align: middle;
     }
 }
 

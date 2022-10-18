@@ -24,7 +24,6 @@ const ruleContainer = document.getElementById("ruleContainer");
 
 const selectRandom = songCollection.sort((a, b) => 0.5 - Math.random()).splice(0, 14);
 
-
 // Global Variables
 
 var points = 0;
